@@ -1,10 +1,8 @@
 const token = 'YOUR_TOKEN_HERE';
-
-const token = 'YOUR_TOKEN_HERE';
 const postData = {
   body: 'Great stuff'
 };
- 
+
 fetch(
   'https://api.github.com/repos/yinazee/js-ajax-fetch-lab/commits/:sha/comments',
   {
