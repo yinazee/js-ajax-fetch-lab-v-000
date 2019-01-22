@@ -1,4 +1,6 @@
 const token = 'YOUR_TOKEN_HERE';
+const baseUrl = 'https://api.github.com/repos/';
+
 const postData = {
   body: 'Great stuff'
 };
