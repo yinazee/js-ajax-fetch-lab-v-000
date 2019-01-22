@@ -1,3 +1,21 @@
+const token = 'YOUR_TOKEN_HERE';
+
+const token = 'YOUR_TOKEN_HERE';
+const postData = {
+  body: 'Great stuff'
+};
+ 
+fetch(
+  'https://api.github.com/repos/yinazee/js-ajax-fetch-lab/commits/:sha/comments',
+  {
+    method: 'POST',
+    body: JSON.stringify(postData),
+    headers: {
+      Authorization: `token ${token}`
+    }
+  }
+).then(res => console.log(res));
+
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
